@@ -1,0 +1,58 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  /* border: 1px solid red; */
+  background-color: beige;
+  animation-name: modalContent;
+  animation-duration: 2s;
+  position: relative;
+}
+.close-modal-icon {
+  font-size: 40px;
+  cursor: pointer;
+}
+.modal-header {
+  background-color: aqua;
+  color: black;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+
+.modal-body {
+  background-color: rgb(200, 121, 121);
+  color: black;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+.modal-footer {
+  background-color: rgb(100, 205, 116);
+  color: black;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+@keyframes modalContent {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+/* Open modal button from Modal-test.jsx */
+.open-modal{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
